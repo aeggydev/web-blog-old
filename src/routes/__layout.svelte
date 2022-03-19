@@ -15,7 +15,7 @@
 	<Footer />
 </div>
 
-<style>
+<style lang="scss">
 	@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 	:global(html, body) {
 		font-family: 'Outfit', Arial, sans-serif;
@@ -25,16 +25,18 @@
 		margin: 0;
 		min-height: 100vh;
 	}
-	:global()::selection {
-		background: #69517d;
-		color: white;
-	}
-	:global()::-webkit-scrollbar {
-		background: transparent;
-		width: 0.75rem;
-	}
-	:global()::-webkit-scrollbar-thumb {
-		background: #939ca8;
+	:global() {
+		&::selection {
+			background: #69517d;
+			color: white;
+		}
+		&::-webkit-scrollbar {
+			background: transparent;
+			width: 0.75rem;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #939ca8;
+		}
 	}
 	aside {
 		left: 1.5%;
@@ -43,7 +45,7 @@
 		position: fixed;
 	}
 	.main-panel {
-        min-height: 100vh;
+		min-height: 100vh;
 		display: grid;
 		grid-auto-rows: auto 1fr auto;
 		padding: 0 20%;
