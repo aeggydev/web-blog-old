@@ -1,8 +1,8 @@
 <div class="nav">
 	<div>My name is nellerdev</div>
 	<div class="links">
+        <a href="/">Articles</a>
 		<a href="/about">About</a>
-		<a href="/articles">Articles</a>
 		<a href="/contact">Contact</a>
 		<a href="https://github.com/aeggydev" target="_blank">Github</a>
 	</div>
@@ -28,6 +28,9 @@
 		color: #632626;
 		text-decoration: none;
 	}
+    .links a:hover {
+        text-decoration: underline;
+    }
 	.icons {
 		display: flex;
 		align-items: center;
