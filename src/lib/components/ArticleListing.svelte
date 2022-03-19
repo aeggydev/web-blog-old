@@ -2,16 +2,19 @@
 	export let date = '';
 	export let title = '';
 	export let text = '';
+    export let updated = '';
+    $: lastUpdated = updated ? ` | Last updated: ${updated}` : '';
 </script>
 
 <article>
 	<a class="title">{title}</a>
-    <div class="date">{date}</div>
+    <div class="date">{date}{lastUpdated}</div>
 	<div class="text">{text}</div>
 </article>
 
 <style>
 	article {
+        text-align: left;
         max-width: 60rem;
         margin: 0 auto;
         transition: all 0.2s ease;
