@@ -2,7 +2,6 @@
 	<div>My name is nellerdev</div>
 	<div class="links">
 		<a href="/">Articles</a>
-		<a href="/about">About</a>
 		<a href="/projects">Projects</a>
 		<a href="/contact">Contact</a>
 		<a href="https://github.com/aeggydev" target="_blank">Github</a>
