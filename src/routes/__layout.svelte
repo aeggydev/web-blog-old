@@ -1,6 +1,7 @@
 <script>
 	import Nav from '$lib/components/Nav.svelte';
 	import Header from '$lib/components/Header.svelte';
+    import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <div class="grid">
@@ -12,6 +13,7 @@
 		<main>
 			<slot />
 		</main>
+        <Footer />
 	</div>
 </div>
 
@@ -43,7 +45,6 @@
     }
     .main-panel {
         margin-top: 2em;
-        margin-bottom: 4em;
         text-align: center;
     }
 </style>
