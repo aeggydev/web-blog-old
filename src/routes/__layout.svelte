@@ -31,6 +31,8 @@
         position: fixed;
     }
     .main-panel {
-        padding-top: 2em;
+        margin-top: 2em;
+        margin-bottom: 4em;
+        text-align: center;
     }
 </style>
