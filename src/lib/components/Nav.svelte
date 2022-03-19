@@ -6,10 +6,6 @@
 		<a href="/contact">Contact</a>
 		<a href="https://github.com/aeggydev" target="_blank">Github</a>
 	</div>
-	<div class="icons">
-		<img src="/icons/rss.svg" alt="RSS Feed" />
-		Feed
-	</div>
 </div>
 
 <style lang="scss">
@@ -30,10 +26,5 @@
 				text-decoration: underline;
 			}
 		}
-	}
-	.icons {
-		display: flex;
-		align-items: center;
-		gap: 5px;
 	}
 </style>
