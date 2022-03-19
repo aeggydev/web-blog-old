@@ -4,6 +4,9 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
+<svelte:head>
+    <link rel="stylesheet" href="/prism.css">
+</svelte:head>
 <aside>
 	<Nav />
 </aside>
