@@ -42,10 +42,6 @@
 		text-decoration: none;
 		color: black;
 	}
-	.title:hover {
-		text-decoration: underline;
-		text-decoration-thickness: 3px;
-	}
 	.description {
 		margin-top: 0.5rem;
 	}
