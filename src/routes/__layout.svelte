@@ -44,7 +44,6 @@
         position: fixed;
     }
     .main-panel {
-        margin-top: 2em;
-        text-align: center;
+        margin: 2em 20%;
     }
 </style>
