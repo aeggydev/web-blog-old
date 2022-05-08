@@ -1,5 +1,5 @@
 <div class="nav">
-	<div>My name is nellerdev</div>
+	<div>Welcome to my blog</div>
 	<div class="links">
 		<a href="/">Articles</a>
 		<a href="/projects">Projects</a>
