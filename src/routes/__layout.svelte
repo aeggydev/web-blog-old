@@ -27,6 +27,7 @@
 		padding-top: 0;
 		margin: 0;
 		min-height: 100vh;
+		overflow-y: scroll;
 	}
 	:global() {
 		&::selection {
