@@ -29,10 +29,11 @@
 		display: inline-flex;
 		align-items: center;
 		cursor: pointer;
-		img {
+		user-select: none;
+	}
+	.go_back img {
 			height: 1.2em;
 		}
-	}
 	article {
 		padding-top: 2rem;
 		margin: 0 5%;
