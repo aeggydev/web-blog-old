@@ -14,7 +14,7 @@
 	<div class="text">{text}</div>
 </article>
 
-<style>
+<style lang="scss">
 	article {
         text-align: left;
         transition: all 0.2s ease;
@@ -23,15 +23,18 @@
 		color: #3f3f3f;
 	}
 	.title {
-		font-size: 48px;
+		font-size: 40px;
 		text-decoration: none;
 		color: black;
+		&:hover {
+			text-decoration: underline;
+			text-decoration-thickness: 3px;
+		}
 	}
-	.title:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-    }
 	.text {
+		display: flex;
+		flex-direction: column;
+
         margin-top: 0.5rem;
 	}
 </style>
