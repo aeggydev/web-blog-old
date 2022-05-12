@@ -24,7 +24,6 @@
     padding-top: 0;
     margin: 0;
     min-height: 100vh;
-    overflow-y: scroll;
   }
 
   :global {
@@ -32,19 +31,10 @@
       background: #69517d;
       color: white;
     }
-
-    &::-webkit-scrollbar {
-      background: transparent;
-      width: 0.75rem;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: #939ca8;
-    }
   }
 
   main {
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
 
   .content {

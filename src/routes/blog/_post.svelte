@@ -18,9 +18,13 @@
     overflow-wrap: break-word;
   }
 
-  article :global(pre > code) {
+  article :global(pre) {
     font-family: 'Fira Code', Menlo, Monaco, Consolas, Courier New, monospace;
-    font-size: 13px;
+    font-size: 14px;
+    overflow-x: auto;
+    padding: 1rem;
+
+    border-radius: 0.75rem;
   }
 
   .title {
