@@ -1,11 +1,22 @@
+<script>
+    import { page } from '$app/stores';
+    function isPathname(path) {
+        return $page.url.pathname === path
+    }
+
+    $: articleDecoration = isPathname("/") ? "text-decoration: underline" : ""
+    $: projectsDecoration = isPathname("/projects") ? "text-decoration: underline" : ""
+    $: contactDecoration = isPathname("/contact") ? "text-decoration: underline" : ""
+</script>
+
 <div class="home">
     <div class="top">
         <a class="title" href="/">Tech blog</a>
     </div>
     <div class="bottom">
-        <a href="/">Articles</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+        <a href="/" style="{articleDecoration}">Articles</a>
+        <a href="/projects" style="{projectsDecoration}">Projects</a>
+        <a href="/contact" style="{contactDecoration}">Contact</a>
         <a href="https://github.com/aeggydev" target="_blank">Github</a>
     </div>
 </div>
