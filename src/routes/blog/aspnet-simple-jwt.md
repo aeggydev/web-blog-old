@@ -42,10 +42,12 @@ Then, delete WeatherForecast.cs and the Controllers folder, as we’ll be using
 the [minimal API](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) in ASP.NET.
 
 The actual libraries we’ll use for JWTs is Microsoft.AspNetCore.Authentication.JwtBearer and
-Microsoft.AspNetCore.Authorization, which can be installed either from your IDE or by running `dotnet add package
-Microsoft.AspNetCore.Authentication.JwtBearer
+Microsoft.AspNetCore.Authorization, which can be installed either from your IDE or by running 
+```shell
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet add package Microsoft.AspNetCore.Authorization
+```
 
-dotnet add package Microsoft.AspNetCore.Authorization`
 
 ### Adding JWT authentication
 
