@@ -4,9 +4,9 @@
         return $page.url.pathname === path
     }
 
-    $: articleDecoration = isPathname("/") ? "text-decoration: underline" : ""
-    $: projectsDecoration = isPathname("/projects") ? "text-decoration: underline" : ""
-    $: contactDecoration = isPathname("/contact") ? "text-decoration: underline" : ""
+    $: articleDecoration = isPathname("/", $page) ? "text-decoration: underline" : ""
+    $: projectsDecoration = isPathname("/projects", $page) ? "text-decoration: underline" : ""
+    $: contactDecoration = isPathname("/contact", $page) ? "text-decoration: underline" : ""
 </script>
 
 <div class="home">
