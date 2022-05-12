@@ -26,6 +26,10 @@
     min-height: 100vh;
   }
 
+  :global(body) {
+    overflow-y: scroll;
+  }
+
   :global {
     &::selection {
       background: #69517d;

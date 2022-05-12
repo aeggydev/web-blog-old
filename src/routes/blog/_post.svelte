@@ -20,10 +20,7 @@
 
   article :global(pre) {
     font-family: 'Fira Code', Menlo, Monaco, Consolas, Courier New, monospace;
-    font-size: 14px;
-    @media (min-width: 768px) {
-      font-size: 16px;
-    }
+    font-size: 13px;
 
     overflow-x: auto;
     padding: 1rem;
