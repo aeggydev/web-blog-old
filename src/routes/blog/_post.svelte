@@ -1,7 +1,6 @@
 <script>
 	export let title;
 	export let date;
-	export let description;
 </script>
 
 <article>
@@ -10,21 +9,19 @@
 	{#if date}
 		<div class="published">{date}</div>
 	{/if}
-	{#if description}
-		<div class="description">{description}</div>
-	{/if}
 
 	<slot />
 </article>
 
 <style lang="scss">
+	article {
+		overflow-wrap: break-word;
+	}
+
 	.title {
-		font-size: 40px;
+		font-size: 1.6rem;
 		text-decoration: none;
 		color: black;
-	}
-	.description {
-		margin-top: 0.5rem;
 	}
 	.published {
 		color: #3f3f3f;

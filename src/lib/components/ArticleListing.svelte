@@ -23,9 +23,9 @@
 		color: #3f3f3f;
 	}
 	.title {
-		font-size: 40px;
-		text-decoration: none;
+		font-size: 1.6rem;
 		color: black;
+		text-decoration: none;
 		&:hover {
 			text-decoration: underline;
 			text-decoration-thickness: 3px;
