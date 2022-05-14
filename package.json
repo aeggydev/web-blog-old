@@ -32,6 +32,7 @@
   },
   "type": "module",
   "dependencies": {
+    "feed": "^4.2.2",
     "mdsvex": "^0.10.5",
     "node-sass": "^7.0.1"
   }
