@@ -1,5 +1,7 @@
 <script>
-    import { page } from '$app/stores';
+    import {page} from '$app/stores'
+    import Breadcrumbs from "./Breadcrumbs.svelte"
+
     function isPathname(path) {
         return $page.url.pathname === path
     }
@@ -11,7 +13,7 @@
 
 <div class="home">
     <div class="top">
-        <a class="title" href="/">Tech blog</a>
+        <Breadcrumbs />
     </div>
     <div class="bottom">
         <a href="/" style="{articleDecoration}">Articles</a>
@@ -41,20 +43,6 @@
       &:hover {
         text-decoration: underline;
       }
-    }
-  }
-
-  .title {
-    grid-column: 2;
-
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
-    color: black;
-
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
     }
   }
 </style>
