@@ -21,14 +21,14 @@
     export let posts;
 </script>
 
-<div class="articles">
+<article>
 	{#each posts as { path, metadata: { title, date, updated, description } }}
 		<Article {title} {date} {updated} text={description} link={path} />
 	{/each}
-</div>
+</article>
 
 <style>
-	.articles {
+	article {
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;

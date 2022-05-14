@@ -3,16 +3,13 @@
     import Footer from '$lib/components/Footer.svelte'
 </script>
 
-<svelte:head>
-    <link rel="stylesheet" href="/prism.css">
-</svelte:head>
-    <div class="content">
-        <Header />
-        <main>
-            <slot />
-        </main>
-        <Footer />
-    </div>
+<div class="content">
+    <Header />
+    <main>
+        <slot />
+    </main>
+    <Footer />
+</div>
 
 <style lang="scss">
   :global(body) {

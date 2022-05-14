@@ -3,6 +3,9 @@
     export let date
 </script>
 
+<svelte:head>
+    <link rel="stylesheet" href="/prism.css">
+</svelte:head>
 <article>
     <div class="title">{title}</div>
 
