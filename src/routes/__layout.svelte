@@ -1,8 +1,33 @@
-<script>
+<script lang="ts">
+    import {page} from "$app/stores"
+
     import Header from '$lib/components/Header.svelte'
     import Footer from '$lib/components/Footer.svelte'
+
+    // Dependency needed to subscribe to url changes
+    function makeTitle(dependency: unknown): string {
+        let title: string
+        console.log(`lol "${$page.url.pathname}"`)
+        if ($page.url.pathname === "/") {
+            title = "~"
+        } else {
+            let split = $page.url.pathname
+                .split("/")
+                .reverse()
+                .filter(x => x.length > 0)
+                .concat(["~"])
+            title = split.join(" / ").trim()
+        }
+
+        return title
+    }
+
+    $: title = makeTitle($page)
 </script>
 
+<svelte:head>
+    <title>{title}</title>
+</svelte:head>
 <div class="content">
     <Header />
     <main>
