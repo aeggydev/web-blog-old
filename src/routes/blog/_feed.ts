@@ -1,3 +1,5 @@
+export {}
+/*
 import {Feed} from "feed";
 import {get as getPosts} from "./posts.json"
 
@@ -36,3 +38,4 @@ export async function getFeed() {
 
     return feed
 }
+*/
