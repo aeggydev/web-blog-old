@@ -1,6 +1,7 @@
 <script>
     export let title
     export let date
+    // TODO: Slugs dont get passed, fix it
     export let slug
     export let description
 </script>
@@ -8,11 +9,14 @@
 <svelte:head>
     <link rel="stylesheet" href="/prism.css">
 
+    <meta name="title" content="{title}">
+    <meta name="description" content="{description}">
     <meta property="og:title" content="{title}" />
     <meta property="og:description" content="{description}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://tilde.cz/blog/{slug}" />
     <meta property="og:image" content="/icon-512.png" />
+    <!-- TODO: design a banner -->
 </svelte:head>
 <article>
     <div class="title">{title}</div>
