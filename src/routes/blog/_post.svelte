@@ -34,10 +34,10 @@
   .title {
     font-size: 1.6rem;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
   }
 
   .published {
-    color: #3f3f3f;
+    color: var(--sub-text-color);
   }
 </style>

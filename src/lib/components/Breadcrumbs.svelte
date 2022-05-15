@@ -25,7 +25,7 @@
   .breadcrumbs {
     font-size: 2rem;
     font-weight: 500;
-    color: black;
+    color: var(--text-color);
 
     display: flex;
     gap: 0.5rem;
@@ -34,7 +34,7 @@
   .breadcrumb {
     font-size: 1.55rem;
     font-weight: 500;
-    color: black;
+    color: var(--text-color);
     text-transform: capitalize;
 
     text-decoration: none;

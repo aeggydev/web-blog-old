@@ -27,6 +27,7 @@
   .home {
     display: grid;
     grid-template-rows: 3fr 2fr;
+    background: var(--secondary-bg);
   }
 
   .bottom {
@@ -36,7 +37,7 @@
 
     a {
       font-size: 1.1rem;
-      color: #632626;
+      color: var(--accent-text-color);
       text-decoration: none;
 
       &:hover {

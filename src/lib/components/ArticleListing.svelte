@@ -20,11 +20,11 @@
         transition: all 0.2s ease;
 	}
 	.date {
-		color: #3f3f3f;
+		color: var(--sub-text-color);
 	}
 	.title {
 		font-size: 1.6rem;
-		color: black;
+		color: var(--text-color);
 		text-decoration: none;
 		&:hover {
 			text-decoration: underline;

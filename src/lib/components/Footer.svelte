@@ -6,5 +6,7 @@
   footer {
     text-align: center;
     row-gap: 0.2rem;
+
+    background: var(--secondary-bg);
   }
 </style>
