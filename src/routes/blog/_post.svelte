@@ -1,10 +1,17 @@
 <script>
     export let title
     export let date
+    export let slug
+    export let description
 </script>
 
 <svelte:head>
     <link rel="stylesheet" href="/prism.css">
+
+    <meta property="og:title" content="{title}" />
+    <meta property="og:description" content="{description}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://tilde.cz/blog/{slug}" />
 </svelte:head>
 <article>
     <div class="title">{title}</div>
@@ -19,6 +26,7 @@
 <style lang="scss">
   article {
     overflow-wrap: break-word;
+
     :global {
       color: var(--text-color);
     }
@@ -37,6 +45,7 @@
   article :global(a) {
     color: var(--link-color);
     text-decoration-thickness: 2.5px;
+
     &:hover {
       background: var(--link-color);
       color: var(--link-hover-color)

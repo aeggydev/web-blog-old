@@ -29,6 +29,7 @@
 
 <svelte:head>
     <title>{title}</title>
+    <meta name="theme-color" content="#913de6">
 </svelte:head>
 <!--suppress HtmlUnknownAttribute -->
 <div class="content"
