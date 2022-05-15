@@ -1,7 +1,7 @@
 ---
 title: Simple API authentication in ASP.NET with JWTs
 date: 8. April 2022
-description: Here I explain how to set up JWT authentication in ASP.NET 6.
+description: How to set up JWT authentication in ASP.NET 6.
 ---
 
 Browsing for tutorials on adding authentication to a modern ASP.NET project, one would think it’d be a monumental task
