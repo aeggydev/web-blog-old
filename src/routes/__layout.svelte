@@ -44,6 +44,8 @@
 
      style:--bg="{theme.background}"
      style:--secondary-bg="{theme.secondaryBackground}"
+
+     style:--padding-x-desktop="22.5vw"
 >
     <Header />
     <main>
@@ -95,7 +97,7 @@
     > :global(*) {
       padding: 0.75rem 1.25rem;
       @media (min-width: 768px) {
-        padding: 0.75rem 20vw;
+        padding: 0.75rem var(--padding-x-desktop);
       }
     }
   }
