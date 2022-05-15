@@ -25,10 +25,13 @@
 
 <style lang="scss">
   .home {
-    padding: 1.5rem 0;
-
     display: grid;
     grid-template-rows: 3fr 2fr;
+
+    padding: 1.5rem 1.25rem;
+    @media (min-width: 768px) {
+      padding: 1.5rem 20vw;
+    }
   }
 
   .bottom {
@@ -40,6 +43,7 @@
       font-size: 1.1rem;
       color: #632626;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }

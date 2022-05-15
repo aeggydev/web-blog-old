@@ -37,6 +37,11 @@
 </div>
 
 <style lang="scss">
+  :global(html, body) {
+    margin: 0;
+    padding: 0;
+  }
+
   :global(body) {
     overflow-y: scroll;
   }
@@ -50,6 +55,11 @@
 
   main {
     overflow-x: hidden;
+
+    padding: 0 1.25rem;
+    @media (min-width: 768px) {
+      padding: 0 20vw;
+    }
   }
 
   .content {
@@ -59,10 +69,7 @@
     grid-template-rows: auto 1fr auto;
 
     min-height: 100vh;
-    padding: 0 1.25rem;
-    @media (min-width: 768px) {
-      padding: 0 20vw;
-    }
+    padding: 0;
   }
 
 </style>
