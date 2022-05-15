@@ -1,5 +1,5 @@
 export function getTheme(): ColorScheme {
-    return light
+    return black
 }
 
 export const light: ColorScheme = {
@@ -16,6 +16,21 @@ export const light: ColorScheme = {
 
     background: "#fff8dd",
     secondaryBackground: "#fff8dd"
+}
+export const black: ColorScheme = {
+    textColor: "#eee",
+    subTextColor: "#6b6b6b",
+    accentTextColor: "#2093f8",
+
+    linkColor: "#407bd4",
+    linkHoverColor: "#ddd",
+    // TODO: Add visited
+
+    selectionColor: "white",
+    selectionBackground: "#69517d",
+
+    background: "#1a1a1a",
+    secondaryBackground: "#1a1a1a"
 }
 
 export interface ColorScheme {

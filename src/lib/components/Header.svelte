@@ -6,7 +6,8 @@
         return $page.url.pathname === path
     }
 
-    $: articleDecoration = isPathname("/", $page) ? "text-decoration: underline" : ""
+    $: homeDecoration = isPathname("/", $page) ? "text-decoration: underline" : ""
+    $: articleDecoration = isPathname("/blog", $page) ? "text-decoration: underline" : ""
     $: projectsDecoration = isPathname("/projects", $page) ? "text-decoration: underline" : ""
     $: contactDecoration = isPathname("/contact", $page) ? "text-decoration: underline" : ""
 </script>
@@ -16,6 +17,7 @@
         <Breadcrumbs />
     </div>
     <div class="bottom">
+        <a href="/" style="{homeDecoration}">Home</a>
         <a href="/" style="{articleDecoration}">Articles</a>
         <a href="/projects" style="{projectsDecoration}">Projects</a>
         <a href="/contact" style="{contactDecoration}">Contact</a>
