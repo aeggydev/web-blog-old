@@ -8,7 +8,6 @@
     // Dependency needed to subscribe to url changes
     function makeTitle(dependency: unknown): string {
         let title: string
-        console.log(`lol "${$page.url.pathname}"`)
         if ($page.url.pathname === "/") {
             title = "~"
         } else {

@@ -12,6 +12,7 @@
     <meta property="og:description" content="{description}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://tilde.cz/blog/{slug}" />
+    <meta property="og:image" content="/favicon-512.png" />
 </svelte:head>
 <article>
     <div class="title">{title}</div>
