@@ -15,7 +15,7 @@
 </script>
 
 <div class="breadcrumbs">
-    <a class="breadcrumb" href="/">~</a>
+    <a class="breadcrumb tilde" href="/">~</a>
     {#if secondBreadcrumb}
         <a class="breadcrumb breadcrumb_second" href="/">{secondBreadcrumb}</a>
     {/if}
@@ -29,6 +29,15 @@
 
     display: flex;
     gap: 0.5rem;
+  }
+
+  .tilde {
+    &:hover {
+      background: #913de6;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    // TODO: Animate
   }
 
   .breadcrumb {
@@ -53,6 +62,5 @@
       content: "/";
       margin-left: .5rem;
     }
-
   }
 </style>
