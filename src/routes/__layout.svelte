@@ -82,6 +82,9 @@
     padding: 0;
 
     background: var(--bg);
+    :global {
+      color: var(--text-color);
+    }
 
     > :global(:first-child) {
       padding-top: 1.5rem;

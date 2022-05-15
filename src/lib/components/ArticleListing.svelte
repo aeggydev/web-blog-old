@@ -18,14 +18,15 @@
 	article {
         text-align: left;
         transition: all 0.2s ease;
+		color: var(--text-color);
 	}
 	.date {
 		color: var(--sub-text-color);
 	}
 	.title {
 		font-size: 1.6rem;
-		color: var(--text-color);
 		text-decoration: none;
+		color: var(--text-color);
 		&:hover {
 			text-decoration: underline;
 			text-decoration-thickness: 3px;

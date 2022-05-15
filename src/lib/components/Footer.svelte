@@ -8,5 +8,6 @@
     row-gap: 0.2rem;
 
     background: var(--secondary-bg);
+    color: var(--text-color);
   }
 </style>

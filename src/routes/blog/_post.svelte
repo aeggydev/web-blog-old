@@ -19,6 +19,9 @@
 <style lang="scss">
   article {
     overflow-wrap: break-word;
+    :global {
+      color: var(--text-color);
+    }
   }
 
   article :global(pre) {
