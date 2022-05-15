@@ -26,10 +26,7 @@
 <style lang="scss">
   article {
     overflow-wrap: break-word;
-
-    :global {
-      color: var(--text-color);
-    }
+    color: var(--text-color);
   }
 
   article :global(pre) {
@@ -46,10 +43,10 @@
     color: var(--link-color);
     text-decoration-thickness: 2.5px;
 
-    &:hover {
-      background: var(--link-color);
-      color: var(--link-hover-color)
-    }
+  }
+  article :global(a):hover {
+    background: var(--link-color);
+    color: var(--link-hover-color)
   }
 
 
