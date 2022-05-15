@@ -33,6 +33,7 @@
 
   article :global(a) {
     color: var(--link-color);
+    text-decoration-thickness: 2.5px;
     &:hover {
       background: var(--link-color);
       color: var(--link-hover-color)
