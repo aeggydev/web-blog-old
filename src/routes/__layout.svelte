@@ -55,11 +55,6 @@
 
   main {
     overflow-x: hidden;
-
-    padding: 0 1.25rem;
-    @media (min-width: 768px) {
-      padding: 0 20vw;
-    }
   }
 
   .content {
@@ -70,6 +65,18 @@
 
     min-height: 100vh;
     padding: 0;
-  }
 
+    > :global(:first-child) {
+      padding-top: 1.5rem;
+    }
+    > :global(:last-child) {
+      padding-bottom: 1.5rem;
+    }
+    > :global(*) {
+      padding: 0.75rem 1.25rem;
+      @media (min-width: 768px) {
+        padding: 0.75rem 20vw;
+      }
+    }
+  }
 </style>
