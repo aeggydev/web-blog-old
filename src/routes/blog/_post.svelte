@@ -31,6 +31,15 @@
     border-radius: 0.75rem;
   }
 
+  article :global(a) {
+    color: var(--link-color);
+    &:hover {
+      background: var(--link-color);
+      color: var(--link-hover-color)
+    }
+  }
+
+
   .title {
     font-size: 1.6rem;
     text-decoration: none;

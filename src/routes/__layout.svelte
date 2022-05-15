@@ -37,7 +37,6 @@
      style:--accent-text-color="{theme.accentTextColor}"
 
      style:--link-color="{theme.linkColor}"
-     style:--link-bg="{theme.linkBackground}"
      style:--link-hover-color="{theme.linkHoverColor}"
 
      style:--selection-color="{theme.selectionColor}"
@@ -72,7 +71,6 @@
       color: var(--selection-color);
     }
   }
-
 
   .content {
     grid-column: 2;

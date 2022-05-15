@@ -7,10 +7,9 @@ export const light: ColorScheme = {
     subTextColor: "#3f3f3f",
     accentTextColor: "#632626",
 
-    linkColor: "",
-    linkBackground: "",
-    linkHoverColor: "",
-    // TBD
+    linkColor: "#581c87",
+    linkHoverColor: "white",
+    // TODO: Add visited
 
     selectionColor: "white",
     selectionBackground: "#69517d",
@@ -25,7 +24,6 @@ export interface ColorScheme {
     accentTextColor: string // Color used as accent
 
     linkColor: string // Used for link text color
-    linkBackground: string // Used for link underlines and backgrounds when however
     linkHoverColor: string // Used for text color when hovered
 
     selectionColor: string
