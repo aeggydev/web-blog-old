@@ -19,7 +19,7 @@ export const light: ColorScheme = {
 }
 export const black: ColorScheme = {
     textColor: "#eee",
-    subTextColor: "#6b6b6b",
+    subTextColor: "#a3a3a3",
     accentTextColor: "#2093f8",
 
     linkColor: "#407bd4",
