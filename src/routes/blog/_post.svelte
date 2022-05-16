@@ -1,9 +1,12 @@
 <script>
+    import {page} from "$app/stores"
+
     export let title
     export let date
-    // TODO: Slugs dont get passed, fix it
-    export let slug
     export let description
+
+    const slug = $page.url.pathname.split("/")[2]
+    // TODO: Find a better way to handle this
 </script>
 
 <svelte:head>
@@ -11,6 +14,7 @@
 
     <meta name="title" content="{title}">
     <meta name="description" content="{description}">
+    <link rel="canonical" href="https://tilde.cz/blog/{slug}">
     <meta property="og:title" content="{title}" />
     <meta property="og:description" content="{description}" />
     <meta property="og:type" content="article" />
