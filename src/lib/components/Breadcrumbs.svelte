@@ -5,8 +5,8 @@
     $: {
         const value = $page.url.pathname.split("/")[1]
         switch (value) {
-            case "blog":
-                secondBreadcrumb = "articles"
+            case "":
+                secondBreadcrumb = "About"
                 break
             default:
                 secondBreadcrumb = value
@@ -37,7 +37,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    // TODO: Animate
   }
 
   .breadcrumb {

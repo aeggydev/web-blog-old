@@ -9,7 +9,6 @@
     $: homeDecoration = isPathname("/", $page) ? "text-decoration: underline" : ""
     $: articleDecoration = isPathname("/blog", $page) ? "text-decoration: underline" : ""
     $: projectsDecoration = isPathname("/projects", $page) ? "text-decoration: underline" : ""
-    $: contactDecoration = isPathname("/contact", $page) ? "text-decoration: underline" : ""
 </script>
 
 <div class="home">
@@ -17,10 +16,9 @@
         <Breadcrumbs />
     </div>
     <div class="bottom">
-        <a href="/" style="{homeDecoration}">Home</a>
-        <a href="/" style="{articleDecoration}">Articles</a>
+        <a href="/blog" style="{articleDecoration}">Blog</a>
         <a href="/projects" style="{projectsDecoration}">Projects</a>
-        <a href="/contact" style="{contactDecoration}">Contact</a>
+        <a href="/" style="{homeDecoration}">About</a>
         <a href="https://github.com/aeggydev" target="_blank">Github</a>
     </div>
 </div>

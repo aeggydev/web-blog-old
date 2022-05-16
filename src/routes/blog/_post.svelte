@@ -51,13 +51,11 @@
   article :global(a) {
     color: var(--link-color);
     text-decoration-thickness: 2.5px;
-
   }
   article :global(a):hover {
     background: var(--link-color);
     color: var(--link-hover-color)
   }
-
 
   .title {
     font-size: 1.6rem;
