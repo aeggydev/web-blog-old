@@ -15,9 +15,8 @@ export const light: ColorScheme = {
     subTextColor: "#3f3f3f",
     accentTextColor: "#632626",
 
-    linkColor: "#581c87",
+    linkColor: "#1064e1",
     linkHoverColor: "white",
-    // TODO: Add visited
 
     selectionColor: "white",
     selectionBackground: "#69517d",
@@ -32,7 +31,6 @@ export const black: ColorScheme = {
 
     linkColor: "#407bd4",
     linkHoverColor: "#ddd",
-    // TODO: Add visited
 
     selectionColor: "white",
     selectionBackground: "#69517d",
