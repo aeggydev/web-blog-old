@@ -4,6 +4,7 @@
     import Header from '$lib/components/Header.svelte'
     import Footer from '$lib/components/Footer.svelte'
     import {getTheme} from "../lib/colorscheme";
+    import DarkMode from "svelte-dark-mode"
 
     // Dependency needed to subscribe to url changes
     function makeTitle(dependency: unknown): string {
@@ -23,31 +24,35 @@
     }
 
     $: title = makeTitle($page)
-    $: theme = getTheme()
+
+    let theme
+    $: colorScheme = getTheme(theme ? theme === "dark" : true)
 </script>
 
 <svelte:head>
     <title>{title}</title>
     <meta name="theme-color" content="#913de6">
 </svelte:head>
+<DarkMode bind:theme />
+
 <!--suppress HtmlUnknownAttribute -->
 <div class="content"
-     style:--text-color="{theme.textColor}"
-     style:--sub-text-color="{theme.subTextColor}"
-     style:--accent-text-color="{theme.accentTextColor}"
+     style:--text-color="{colorScheme.textColor}"
+     style:--sub-text-color="{colorScheme.subTextColor}"
+     style:--accent-text-color="{colorScheme.accentTextColor}"
 
-     style:--link-color="{theme.linkColor}"
-     style:--link-hover-color="{theme.linkHoverColor}"
+     style:--link-color="{colorScheme.linkColor}"
+     style:--link-hover-color="{colorScheme.linkHoverColor}"
 
-     style:--selection-color="{theme.selectionColor}"
-     style:--selection-bg="{theme.selectionBackground}"
+     style:--selection-color="{colorScheme.selectionColor}"
+     style:--selection-bg="{colorScheme.selectionBackground}"
 
-     style:--bg="{theme.background}"
-     style:--secondary-bg="{theme.secondaryBackground}"
+     style:--bg="{colorScheme.background}"
+     style:--secondary-bg="{colorScheme.secondaryBackground}"
 
      style:--padding-x-desktop="22.5vw"
 >
-    <Header />
+    <Header bind:theme />
     <main>
         <slot />
     </main>

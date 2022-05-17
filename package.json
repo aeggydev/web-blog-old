@@ -33,6 +33,7 @@
   "type": "module",
   "dependencies": {
     "mdsvex": "^0.10.5",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "svelte-dark-mode": "^2.1.0"
   }
 }

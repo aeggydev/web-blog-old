@@ -1,7 +1,15 @@
-export function getTheme(): ColorScheme {
-    return black
+export function getTheme(isDark: boolean): ColorScheme {
+    return isDark
+        ? black
+        : light
 }
 
+// Notes:
+// Backgrounds:
+//  #fff8dd
+//  #ffe5f6
+//  #d2e9fd
+const unifiedLightBg = "#fff8dd"
 export const light: ColorScheme = {
     textColor: "black",
     subTextColor: "#3f3f3f",
@@ -14,8 +22,8 @@ export const light: ColorScheme = {
     selectionColor: "white",
     selectionBackground: "#69517d",
 
-    background: "#fff8dd",
-    secondaryBackground: "#fff8dd"
+    background: unifiedLightBg,
+    secondaryBackground: unifiedLightBg,
 }
 export const black: ColorScheme = {
     textColor: "#eee",
