@@ -40,9 +40,12 @@
     border-radius: 50%;
     border: 3px var(--text-color, darkgray) solid;
     background-color: transparent;
-    &:focus {
-      border: 3px dodgerblue solid;
+    &:focus-within {
+      border-color: dodgerblue;
       outline: none;
+    }
+    &:focus:not(:focus-visible) {
+      border-color: var(--text-color);
     }
 
     height: 2rem;
