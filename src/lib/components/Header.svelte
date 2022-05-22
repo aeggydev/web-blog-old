@@ -2,6 +2,7 @@
     import {page} from '$app/stores'
     import Breadcrumbs from "./Breadcrumbs.svelte"
     import DarkModeToggle from "./DarkModeToggle.svelte"
+    import Feed from './Feed.svelte'
 
     export let theme
 
@@ -17,7 +18,10 @@
 <div class="home">
     <div class="top">
         <Breadcrumbs />
-        <DarkModeToggle bind:theme />
+        <div class="top_links">
+            <Feed />
+            <DarkModeToggle bind:theme />
+        </div>
     </div>
     <div class="bottom">
         <a href="/blog" style="{articleDecoration}">Blog</a>
@@ -39,6 +43,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .top_links {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0.75rem;
   }
 
   .bottom {
