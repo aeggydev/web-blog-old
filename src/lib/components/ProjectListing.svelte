@@ -1,9 +1,10 @@
 <script>
     export let title = ""
     export let bubbles = []
+    export let id = ""
 </script>
 
-<div class="listing" class:has-preview={$$slots.preview}>
+<div class="listing" class:has-preview={$$slots.preview} {id}>
     {#if $$slots.preview}
         <slot name="preview" />
     {/if}
@@ -31,12 +32,16 @@
     font-size: 1.25rem;
     margin: 0;
     font-weight: 500;
-    color: #9C5808;
+    color: var(--accent-text-color);
   }
 
   :global([slot="preview"]) {
     display: grid;
     place-content: center;
+    gap: 1rem;
+    @media (min-width: 768px) {
+      max-width: 50%;
+    }
 
     :global(img) {
       object-fit: scale-down;
@@ -101,13 +106,13 @@
     padding: 0 0.4rem;
 
     color: white;
+    font-size: 1.1rem;
 
     > * {
       display: grid;
       padding: 1px 0.5rem;
       place-content: center;
       border-radius: 0.5rem;
-
       white-space: nowrap;
     }
   }
@@ -133,6 +138,8 @@
     align-items: stretch;
     padding: 1rem;
     gap: 0.625rem;
+
+    scroll-margin-top: 1.5rem;
 
     border: 1px solid #474747;
     border-radius: 3px;

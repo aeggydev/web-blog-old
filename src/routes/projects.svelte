@@ -1,13 +1,15 @@
 <script>
     import ProjectListing from "../lib/components/ProjectListing.svelte"
+    import LightImg from "../lib/components/LightImg.svelte"
 </script>
 
 <div class="projects">
     <h1>Projects</h1>
     <div class="demos">
         <ProjectListing title="School entrance exam manager"
+                        id="exam"
                         bubbles="{[
-                            ['Fullstack webapp', '#18AC00'], ['JS & TypeScript', '#EFD81D'], ['React', '#61DAFB'],
+                            ['Fullstack webapp', '#18AC00'], ['JS & TypeScript', '#CDB70E'], ['React', '#61DAFB'],
                             ['C# & ASP.NET', '#3A008C'], ['GraphQL', '#E632AC'], ['Redux', '#764ABC'], ['JWT', '#D63AFF']
                         ]}">
             <div slot="description">
@@ -25,11 +27,12 @@
                 <a href="" style:background="#00B934">Download</a>
             </div>
             <div slot="preview">
-                <img src="/project_images/exam_user.png" alt="Exam manager user screen">
-                <img src="/project_images/exam_admin.png" alt="Exam manager admin screen">
+                <LightImg src="/project_images/exam_user.png" id="exam_user" parentId="exam" />
+                <LightImg src="/project_images/exam_admin.png" id="exam_admin" parentId="exam" />
             </div>
         </ProjectListing>
         <ProjectListing title="OEM Info Tool"
+                        id="oem"
                         bubbles="{[
                             ['Platform: Windows', '#18AC00'], ['C#', '#3A008C'],
                             ['WPF', '#C69A00'], ['MVVM', '#C64700']
@@ -48,13 +51,14 @@
                 <a href="" style:background="#00B934">Download</a>
             </div>
             <div slot="preview">
-                <img src="/project_images/oem_info.png" alt="Screenshot of the tool">
+                <LightImg src="/project_images/oem_tool.png" id="oem_screenshot" parentId="oem" />
             </div>
         </ProjectListing>
         <ProjectListing title="tilde.cz"
+                        id="tilde"
                         bubbles="{[
                             ['Static website', '#18AC00'], ['Svelte', '#FF3E00'],
-                            ['JS & TS', '#EFD81D'], ['CSS & Sass', '#2449D8']]}">
+                            ['JS & TS', '#CDB70E'], ['CSS & Sass', '#2449D8']]}">
             <div slot="description">
                 My personal website and blog, <b>coincidentally also this website</b>. It’s my first project in Svelte,
                 which I find to be amazing framework. I put articles and
@@ -70,12 +74,13 @@
                 <a href="" style:background="#00B934">Visit</a>
             </div>
             <div slot="preview">
-                <img src="/project_images/tilde.png" alt="tilde.cz about page screenshot">
+                <LightImg src="/project_images/tilde.png" id="tilde_about" parentId="tilde" />
             </div>
         </ProjectListing>
         <ProjectListing title="Fitness site"
+                        id="fitness"
                         bubbles="{[
-                            ['Static website', '#18AC00'], ['JS & TypeScript', '#EFD81D'],
+                            ['Static website', '#18AC00'], ['JS & TypeScript', '#CDB70E'],
                             ['Tailwind', '#16BECB'], ['React', '#61DBFB'],
                             ['NextJS', '#000000']]}">
             <div slot="description">
@@ -88,10 +93,11 @@
                 <a href="" style:background="#D68D37">Source</a>
             </div>
             <div slot="preview">
-                <img src="/project_images/fitness_site.png" alt="Fitness site screenshot">
+                <LightImg src="/project_images/fitness_site.png" id="fitness_screenshot" parentId="fitness" />
             </div>
         </ProjectListing>
         <ProjectListing title="Countdown app"
+                        id="countdown"
                         bubbles="{[
                             ['Platform: Windows', '#18AC00'], ['C#', '#3A008C'],
                             ['WPF', '#C69A00'], ['MVVM', '#C64700']]}">
@@ -104,7 +110,7 @@
                 <a href="" style:background="#00B934">Download</a>
             </div>
             <div slot="preview">
-                <img src="/project_images/countdown.png" alt="Screenshot of the tool">
+                <LightImg src="/project_images/countdown.png" id="countdown_screenshot" parentId="countdown" />
             </div>
         </ProjectListing>
         <ProjectListing title="My literate Emacs config"
@@ -155,7 +161,7 @@
             </div>
         </ProjectListing>
         <ProjectListing title="Twitter JFIF Renamer"
-                        bubbles="{[['Chrome extension', '#18AC00'], ['JS & TypeScript', '#EFD81D']]}">
+                        bubbles="{[['Chrome extension', '#18AC00'], ['JS & TypeScript', '#CDB70E']]}">
             <div slot="description">
                 Simple Chrome extension that renames all downloaded .JFIF files (format Twitter stores images in) into
                 .JPG, so that they can be used properly.
