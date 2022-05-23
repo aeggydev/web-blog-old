@@ -3,7 +3,10 @@
     export let bubbles = []
 </script>
 
-<div class="listing">
+<div class="listing" class:has-preview={$$slots.preview}>
+    {#if $$slots.preview}
+        <slot name="preview" />
+    {/if}
     <div class="info">
         <h1>{title}</h1>
         <div class="bubbles">
@@ -29,6 +32,26 @@
     margin: 0;
     font-weight: 500;
     color: #9C5808;
+  }
+
+  :global([slot="preview"]) {
+    display: grid;
+    place-content: center;
+
+    :global(img) {
+      object-fit: scale-down;
+      max-height: 50vh;
+      max-width: 80vw;
+      @media (min-width: 768px) {
+        max-width: 100%;
+        max-height: fit-content;
+      }
+    }
+
+    :global(> iframe) {
+      height: 100%;
+      border: solid white 1px;
+    }
   }
 
   :global([slot="links"]) {
@@ -103,12 +126,21 @@
 
   .listing {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
     align-items: stretch;
     padding: 1rem;
     gap: 0.625rem;
 
     border: 1px solid #474747;
     border-radius: 3px;
+
+    &.has-preview {
+      @media (min-width: 768px) {
+        grid-column: span 2;
+      }
+    }
   }
 </style>
