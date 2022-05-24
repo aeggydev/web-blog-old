@@ -23,8 +23,14 @@
                 <i style="font-weight: 300">Note: The website is in Czech.</i>
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
-                <a href="" style:background="#00B934">Download</a>
+                <a href="https://github.com/aeggydev/purkynova-prijimacky-frontend" target="_blank"
+                   style:background="#00BD0D">
+                    Frontend source
+                </a>
+                <a href="https://github.com/aeggydev/purkynova-prijimacky-backend" target="_blank"
+                   style:background="#0061BD" >
+                    Backend source
+                </a>
             </div>
             <div slot="preview">
                 <LightImg src="/project_images/exam_user.png" id="exam_user" parentId="exam" />
@@ -47,8 +53,14 @@
                     applications.</i>
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
-                <a href="" style:background="#00B934">Download</a>
+                <a href="https://github.com/aeggydev/oem-info-manager" target="_blank"
+                   style:background="#D68D37">
+                    Source
+                </a>
+                <a href="https://github.com/aeggydev/oem-info-manager/releases/download/v1.0.0/oem-logo.zip" target="_blank"
+                   style:background="#00B934">
+                    Download
+                </a>
             </div>
             <div slot="preview">
                 <LightImg src="/project_images/oem_tool.png" id="oem_screenshot" parentId="oem" />
@@ -70,8 +82,14 @@
                 switching this over to .org files and making it all a bit more dynamic.
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
-                <a href="" style:background="#00B934">Visit</a>
+                <a href="https://github.com/aeggydev/web-blog" target="_blank"
+                   style:background="#D68D37">
+                    Source
+                </a>
+                <a href="/" target="_blank"
+                   style:background="#00B934">
+                    Visit
+                </a>
             </div>
             <div slot="preview">
                 <LightImg src="/project_images/tilde.png" id="tilde_about" parentId="tilde" />
@@ -90,7 +108,10 @@
                 <i style="font-weight: 300">Note: Images and video blurred for privacy reasons.</i>
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
+                <a href="https://github.com/aeggydev/lbs-system" target="_blank"
+                   style:background="#D68D37">
+                    Source
+                </a>
             </div>
             <div slot="preview">
                 <LightImg src="/project_images/fitness_site.png" id="fitness_screenshot" parentId="fitness" />
@@ -106,8 +127,14 @@
                 countdown app and also to practice MVVM.
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
-                <a href="" style:background="#00B934">Download</a>
+                <a href="https://github.com/aeggydev/countdown-wpf" target="_blank"
+                   style:background="#D68D37">
+                    Source
+                </a>
+                <a href="https://github.com/aeggydev/countdown-wpf/releases/download/v1.0.0/countdown.zip" target="_blank"
+                   style:background="#00B934">
+                    Download
+                </a>
             </div>
             <div slot="preview">
                 <LightImg src="/project_images/countdown.png" id="countdown_screenshot" parentId="countdown" />
@@ -126,8 +153,8 @@
                 eventually publish it into a website.
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
-                <a href="" style:background="#00B934">Visit</a>
+                <a href="https://github.com/aeggydev/emacs-config" target="_blank"
+                   style:background="#D68D37">Source</a>
             </div>
         </ProjectListing>
         <ProjectListing title="Deezer tool"
@@ -142,8 +169,8 @@
                 anymore.
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
-                <a href="" style:background="#00B934">Download</a>
+                <a href="https://github.com/aeggydev/deezer-tool" target="_blank"
+                   style:background="#D68D37">Source</a>
             </div>
         </ProjectListing>
         <ProjectListing title="MPV player extension"
@@ -156,8 +183,8 @@
                 the extension.
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
-                <a href="" style:background="#00B934">Download</a>
+                <a href="https://github.com/aeggydev/web-mpv" target="_blank"
+                   style:background="#D68D37">Source</a>
             </div>
         </ProjectListing>
         <ProjectListing title="Twitter JFIF Renamer"
@@ -167,8 +194,11 @@
                 .JPG, so that they can be used properly.
             </div>
             <div slot="links">
-                <a href="" style:background="#D68D37">Source</a>
-                <a href="" style:background="#00B934">Download</a>
+                <a href="https://github.com/aeggydev/jfif-renamer-twitter" target="_blank"
+                   style:background="#D68D37">Source</a>
+                <a href="https://chrome.google.com/webstore/detail/twitter-jfif-renamer/hamcegffnbpeabloimdghellacajgikl"
+                   target="_blank"
+                   style:background="#00B934">Download</a>
             </div>
         </ProjectListing>
     </div>
