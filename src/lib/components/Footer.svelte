@@ -1,5 +1,5 @@
 <footer>
-    <span>© 2022 Adam Kučerňák. Made in Brno, <img src="/czech.png" alt="Czech flag" title="Czech flag" class="icon"></span>
+    <span>Made in Brno, <img src="/czech.png" alt="Czech flag" title="Czech flag" class="icon"></span>
 </footer>
 
 <style lang="scss">
