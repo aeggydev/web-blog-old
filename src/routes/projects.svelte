@@ -25,11 +25,11 @@
             <div slot="links">
                 <a href="https://github.com/aeggydev/purkynova-prijimacky-frontend" target="_blank"
                    style:background="#00BD0D">
-                    Frontend source
+                    Frontend
                 </a>
                 <a href="https://github.com/aeggydev/purkynova-prijimacky-backend" target="_blank"
                    style:background="#0061BD" >
-                    Backend source
+                    Backend
                 </a>
             </div>
             <div slot="preview">

@@ -80,7 +80,6 @@
     align-items: stretch;
     margin-top: auto;
 
-
     gap: 0.625rem;
     padding: 0 0.625rem;
     height: 2rem;
