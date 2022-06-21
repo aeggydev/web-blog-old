@@ -68,6 +68,9 @@
   :global(body) {
     overflow-y: scroll;
   }
+  :global(*) {
+    transition: background .15s ease-in-out;
+  }
   main {
     overflow-x: hidden;
   }

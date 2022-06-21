@@ -201,6 +201,16 @@
                    style:background="#00B934">Download</a>
             </div>
         </ProjectListing>
+        <ProjectListing title="Lisp interpreter"
+                        bubbles="{[['C#', '#3A008C'], ['Lisp', '#000'], ['Language development', '#1D63CC']]}">
+            <div slot="description">
+                My attempt to make my own toy Lisp dialect. It doesn't do much but I'm constantly working on it.
+            </div>
+            <div slot="links">
+                <a href="https://github.com/aeggydev/Listopad" target="_blank"
+                   style:background="#D68D37">Source</a>
+            </div>
+        </ProjectListing>
     </div>
 </div>
 
